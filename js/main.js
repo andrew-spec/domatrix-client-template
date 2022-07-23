@@ -2,13 +2,13 @@
 /*jshint -W097*/
 /*jshint browser: true*/
 let rickroll = new Image();
-rickroll.src = "http://domatrix.surge.sh/imageLoaded/rickroll.png";
+rickroll.src = "https://domatrix-beta-client-io.glitch.me/imageLoaded/rickroll.png";
 let ned = new Image();
-ned.src = "http://domatrix.surge.sh/imageLoaded/nedFlanders.png";
+ned.src = "https://domatrix-beta-client-io.glitch.me/imageLoaded/nedFlanders.png";
 let ak47 = new Image();
-ak47.src = "http://domatrix.surge.sh/imageLoaded/ak47.png";
+ak47.src = "https://domatrix-beta-client-io.glitch.me/imageLoaded/ak47.png";
 let amogus = new Image();
-amogus.src = "http://domatrix.surge.sh/imageLoaded/crewmate.png";
+amogus.src = "https://domatrix-beta-client-io.glitch.me/imageLoaded/crewmate.png";
 let hibro1 = new Image();
 hibro1.src =
     "http://cdn.glitch.me/cf5b9aa9-6591-4882-931e-7943708d82dc/sttwo_tank_bullet-3afbada9e2-removebg-preview%20(2).png?v=1645395338213";
@@ -43,15 +43,15 @@ let squidward = new Image();
 squidward.src =
     "http://cdn.glitch.me/cf5b9aa9-6591-4882-931e-7943708d82dc/d24bdf5c01327e266bc4ad661645159c-removebg-preview.png?v=1645401256380";
 let bigbrain = new Image();
-bigbrain.src = "http://domatrix.surge.sh/imageLoaded/brain.png";
+bigbrain.src = "https://domatrix-beta-client-io.glitch.me/imageLoaded/brain.png";
 let knife = new Image();
-knife.src = "http://domatrix.surge.sh/imageLoaded/knife.png";
+knife.src = "https://domatrix-beta-client-io.glitch.me/imageLoaded/knife.png";
 let celestius = new Image();
 celestius.src =
     "http://cdn.glitch.me/cf5b9aa9-6591-4882-931e-7943708d82dc/Celestius?v=1644024220296";
-let amongdrip = new Audio("http://domatrix.surge.sh/imageLoaded/sus.mp3");
+let amongdrip = new Audio("https://domatrix-beta-client-io.glitch.me/imageLoaded/sus.mp3");
 let rickrolled = new Audio(
-    "http://domatrix.surge.sh/imageLoaded/rickrollSong.mp3"
+    "https://domatrix-beta-client-io.glitch.me/imageLoaded/rickrollSong.mp3"
 );
 
 function lerp(a, b, x) {
@@ -1098,7 +1098,7 @@ let selectedServer;
 let messuge = 'Lost Connection to the server. Please Refresh to reconnect'
 let plUpdater;
 
-async function getPlayerData(server, element, locInfo) {
+async function getPlayerData(server, element) {
     let isSecure = server.secure || (location.protocol === "http:" ? 1 : -1);
     let url = `${isSecure === 1 ? "http" : "http"}://${
     server.at
@@ -1122,10 +1122,10 @@ async function getPlayerData(server, element, locInfo) {
       'herokuapp.com' ||
       'repl.co')) {
       console.log('Unknown or unlisted Provider, using global default')
-      hostProvider = locInfo
+      hostProvider = "Unknown"
     }
     let oof = setTimeout(() => {
-        if (element && locInfo)
+        if (element && "Unknown")
             element.textContent = `${hostProvider} | Offline | 0/0 | 🔴`;
     }, 5e3);
 
@@ -1134,7 +1134,7 @@ async function getPlayerData(server, element, locInfo) {
         server.name = res.name;
         server.players = `${res.players}/${res.maxPlayers}`;
         server.status = `${res.status}`;
-        if (element && locInfo)
+        if (element && "Unknown")
             element.textContent = `${hostProvider} | ${server.name} | ${server.players} | ${server.status}`;
 
     });
@@ -1150,13 +1150,12 @@ async function getPlayerData(server, element, locInfo) {
 for (let server of global.servers) {
     if (!server.visible && global.server !== server) continue;
     let [hostCode, regionCode] = server.code.split("-"),
-        locInfo = `${global.codeTable[1][regionCode][0]}`,
         tr = document.createElement("tr"),
         td = document.createElement("td");
-    td.textContent = `${locInfo} | Fetching... | ?/? | 🟡`;
+    td.textContent = `Fetching... | ?/? | 🟡`;
 
     //get player and gamemode info from server
-    getPlayerData(server, td, locInfo);
+    getPlayerData(server, td);
 
     tr.appendChild(td);
     if (server.featured) tr.classList.add("featured");
