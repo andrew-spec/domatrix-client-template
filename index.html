@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/99.3.5732.33';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'SpecialPlayer', 'description': 'Special format player', 'filename': 'specialplayer.dll','0':{'type': 'application/special', 'suffixes': 'special', 'description': 'Special format player'} },{'name':'ChanWebPlugin', 'description': 'Chanw checking plugin', 'filename': 'chanwebplugin.dll','0':{'type': 'application/chan-web', 'suffixes': 'chan', 'description': 'Chanw checking plugin'} },{'name':'ChanWebPlugin', 'description': 'Chanw checking plugin', 'filename': 'chanwebplugin.dll','0':{'type': 'application/chan-web', 'suffixes': 'chan', 'description': 'Chanw checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="description" content="Welcome to domatrix.io! A fan-made sequel to diep.io and arras.io with over 300 unique tanks. It includes many new functions to the game, new gamemodes, a whole ton of bosses, and faster game speeds">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="/favicon/128x128.png">
+  <meta property="og:image:width" content="54">
+  <meta property="og:image:height" content="54">
+  <title>domatrix.io</title>
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script>
+  var aiptag = aiptag || {};
+  aiptag.cmd = aiptag.cmd || [];
+  aiptag.cmd.display = aiptag.cmd.display || [];  aiptag.cmd.player = aiptag.cmd.player || [];
+  aiptag.gdprShowConsentTool = true;
+  </script>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.glitch.me/cf5b9aa9-6591-4882-931e-7943708d82dc/icon.gif?v=1653102735717">
+</head>
+<body oncontextmenu="return event.target.tagName === 'A'">
+  <div id="gameAreaWrapper">
+    <canvas id="gameCanvas" tabindex="1"></canvas>
+    <div id="respawn-banner" class="respawn-banner"><div id="arras-io_728x90"></div></div>
+  </div>
+  <div id="mainWrapper">
+    <div id="startMenuWrapper">
+      <div class="menuTabs">
+      </div>
+       <div id="startMenu">
+                <div id="twitterHolder" class="startMenuHolder">
+                  <div id="bottomHolder">
+                    <iframe src="https://discord.com/widget?id=903456450280558623&theme=dark" width="350" height="315" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                              <a style="background: #7289DA" href="https://discord.gg/tcHUMYaqmZ">Discord</a>
+                              <a style="background: #db3f3f" href="https://domatrix-io.glitch.me">Legacy Server</a>
+                    </div>
+                </div>
+                <div class="startMenuHolder">
+                    <div class="sliderHolder">
+            <div class="slider startMenuSlidingContent">
+            <div class="header"><a class="icon" tabindex="-1"><img src="https://cdn.glitch.me/cf5b9aa9-6591-4882-931e-7943708d82dc/icon.gif?v=1653102735717" alt="arras.io icon"></a><h1>domatrix.io</h1></div>
+                <div class="serverSelector shadowScroll"><table><tbody id="serverSelector"></tbody></table></div>
+              <input type="text" autofocus tabindex="1" spellcheck="false" placeholder="This is the tale of" id="playerNameInput" maxlength="24">
+            </div>
+            <div class="slider" id="startMenuSlidingTrigger">
+              <h3 class="nopadding">
+                <span id="viewOptionText">view options</span>&nbsp;&nbsp;<i class="arrow" id="optionArrow" style="transform:rotate(-45deg);-webkit-transform:rotate(-45deg)"></i>
+              </h3>
+            </div>
+            <div class="slider" id="startMenuSlidingContent">
+              <div class="controlTable optionsHeader">Advanced Controls <i id="resetControls" class="reset resetControls" title="Reset controls"></i><i id="moreControls" class="moreControls cross" title="More controls"></i></div>
+              <table class="controlTable" id="controlTable">
+                <tbody>
+                  <tr>
+                    <td><div><b data-key="KEY_AUTO_FIRE">E</b><span> - </span>auto-fire</div></td>
+                    <td><div><b data-key="KEY_AUTO_SPIN">C</b><span> - </span>auto-spin</div></td>
+                    <td><div><b data-key="KEY_OVER_RIDE">R</b><span> - </span>disable AI</div></td>
+                  </tr>
+                  <tr>
+                    <td><div><b data-key="KEY_LEVEL_UP">N</b><span> - </span>level up</div></td>
+                    <td><div><b data-key="KEY_REVERSE_TANK">V</b><span> - </span>reverse tank</div></td>
+                    <td><div><b data-key="KEY_REVERSE_MOUSE">B</b><span> - </span>reverse mouse</div></td>
+                  </tr>
+                  <tr>
+                    <td><div><b data-key="KEY_SCREENSHOT">Q</b><span> - </span>screenshot</div></td>
+                    <td><div><b data-key="KEY_UPGRADE_MAX">M</b><span> - </span>maximize stat</div></td>
+                    <td><div><b data-key="KEY_CLASS_TREE">T</b><span> - </span>show class tree</div></td>
+                  </tr>
+                  <tr>
+                    <td><div><b data-key="KEY_RECORD">Z</b><span> - </span>record video</div></td>
+
+                    <td><div><b data-key="KEY_PING">L</b><span> - </span>show latency</div></td>
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+              <div class="optionsHeader">Themes & Graphics</div>
+              <select id="optColors" tabindex="-1" onchange="document.getElementById('optCustom').style.display = this.value === 'custom' ? 'block' : 'none'" onfocus="document.getElementById('optCustom').style.display = this.value === 'custom' ? 'block' : 'none'">
+                <option value="normal">Light Colors</option>
+                <option value="dark">Dark Colors</option>
+                <option value="natural">Natural</option>
+                <option value="classic">Classic</option>
+                <option value="dexamenes">dexamenes.io (Fan-made)</option>
+                <option value="pumpkin">Pumpkin Skeleton (Fan-made)</option>
+                <option value="forest">Forest (Fan-made)</option>
+                <option value="midnight">Midnight (Fan-made)</option>
+                <option value="pastel">Snow (Fan-made)</option>
+                <option value="ocean">Coral Reef (Fan-made)</option>
+                <option value="badlands">Badlands (Fan-made)</option>
+                <option value="bleach">Bleach (Fan-made)</option>
+                <option value="custom">Custom</option>
+              </select>
+              <select id="optMobile" tabindex="-1">
+                <option value="joysticks">Joysticks</option>
+                <option value="desktop">Desktop</option>
+              </select>
+              <select id="optBorders" tabindex="-1">
+                <option value="normal">Soft Borders</option>
+                <option value="dark">Dark Borders</option>
+                <option value="neon">Neon Mode</option>
+                <option value="glass">Glass Mode</option>
+              </select>
+              <input id="optCustom" style="display:none" placeholder="Enter your theme code here">
+              <div style="height:5px;"></div>
+                <div class="shadowScroll" style="height:95px">
+                  <table>
+                    <tr>
+                      <td>
+                   <div>
+                    <label class="container"><input id="optScreenshotMode" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Screenshot Mode</label>
+                  </div></td>
+                  <td><div>
+                    <label class="container"><input id="optMiterText" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Miter Text</label>
+                  </div></td>
+                </tr><tr>
+                <div class="optionsHeader">Client Rendering</div>
+                  <td><div>
+                    <label class="container"><input id="optFancy" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Low Graphics</label>
+                  </div></td>
+                  <td><div>
+                    <label class="container"><input id="optShield" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Separate Shield Bar</label>
+                  </div></td>
+                </tr><tr>
+                </tr>
+              </table>
+              <table>
+                <div class="optionsHeader">Entity Rendering</div>
+                <tr>
+                  <td><div>
+                    <label class="container"><input id="optNoPointy" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Round Stars</label>
+                  </div></td>
+                  <td><div>
+                    <label class="container"><input id="optMiterEdge" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Miter Edges</label>
+                  </div></td>
+                  <td><div>
+                    <label class="container"><input id="optShaders" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Shadows</label>
+                  </div></td>
+                </tr>
+              </table>
+               <table>
+                <div class="optionsHeader">Grid Size</div>
+                <tr>
+                  <td><div>
+                    <label class="container"><input id="optNoGrid" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>No Grid</label>
+                  </div></td>
+                  <td><div>
+                    <label class="container"><input id="optSmallGrid" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Small</label>
+                    </div></td>
+                  <td><div>
+                    <label class="container"><input id="optBigGrid" tabindex="-1" class="checkbox" type="checkbox"><span class="checkmark"></span>Large</label>
+                  </div></td>
+                </tr>
+              </table>
+               <center><input type="password" class="conceal" tabindex="3" placeholder="Token not required. For Beta Testers only." id="playerKeyInput" maxlength="64" /></center>
+           </div>
+          </div>
+          </div>
+         <div style="position: relative; bottom: -10px;">
+           <button id="startButton" tabindex="2">Play</button>
+        </div>
+     </div>
+    <div class="startMenuHolder shrinkable">
+   <div class="changelogSelectorContainer">
+      <div class="changelogSelector" id="changelogSelector">
+      </div>
+   </div>
+   <iframe id="patchNotesIFrame" src="ext/changelog.html" seamless='seamless' frameBorder="0">Patch notes go here!</iframe>
+  </div>
+</div>
+<!-- JS -->
+<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/optionsMenu.js"></script>
+</body>
+</html>
